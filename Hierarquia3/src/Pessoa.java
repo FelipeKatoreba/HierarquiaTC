@@ -14,7 +14,7 @@ import javax.persistence.Inheritance;
 import javax.persistence.InheritanceType;
 
 @Entity
-@Inheritance(strategy = InheritanceType.TABLE_PER_CLASS)
+@Inheritance(strategy = InheritanceType.SINGLE_TABLE)
 @DiscriminatorColumn(name = "LuLu", length = 1, discriminatorType = DiscriminatorType.STRING)
 @DiscriminatorValue("P")
 public class Pessoa implements Identificavel {
